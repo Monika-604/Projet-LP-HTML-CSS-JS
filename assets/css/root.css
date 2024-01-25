@@ -1,0 +1,17 @@
+/* Root */
+:root {
+    /* colors: */
+    --primary-color: #4634AD;
+    --secondary-color: #F9C021;
+    --text-color: #000000;
+    --light-background-color: #FFFFFFA6;
+    --dark-background-color: #060644;
+    --subsidiary-background-color: #FAFAFC;
+    --border-color: #EEEEF6;
+    --accent-color: #DFDFED;
+    --white-color: #FFFFFF;
+
+    /* fonts: */
+    --font-oswald: 'oswald';
+    --font-overpass: 'overpass';
+}

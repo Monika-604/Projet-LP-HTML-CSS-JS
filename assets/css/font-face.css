@@ -1,0 +1,55 @@
+/* Font Face */
+
+/* oswald */
+@font-face{
+    font-family: "oswald";
+    src:url(../fonts/oswald/Oswald-ExtraLight.ttf) format("truetype");
+    font-weight: 200;     
+}
+@font-face{
+    font-family: "oswald";
+    src:url(../fonts/oswald/Oswald-Light.ttf) format("truetype");
+    font-weight: 300;     
+}
+@font-face{
+    font-family: "oswald";
+    src:url(../fonts/oswald/Oswald-Regular.ttf) format("truetype");
+    font-weight: 400;     
+}
+@font-face{
+    font-family: "oswald";
+    src:url(../fonts/oswald/Oswald-Medium.ttf) format("truetype");
+    font-weight: 500;     
+}
+@font-face{
+    font-family: "oswald";
+    src:url(../fonts/oswald/Oswald-SemiBold.ttf) format("truetype");
+    font-weight: 600;     
+}
+@font-face{
+    font-family: "oswald";
+    src:url(../fonts/oswald/Oswald-bold.ttf) format("truetype");
+    font-weight: 700;     
+}
+
+/* overpass */
+@font-face{
+    font-family: "overpass";
+    src:url(../fonts/overpass/Overpass-ExtraLight.ttf) format("truetype");
+    font-weight: 200;     
+}
+@font-face{
+    font-family: "overpass";
+    src:url(../fonts/overpass/Overpass-Regular.ttf) format("truetype");
+    font-weight: 400;     
+}
+@font-face{
+    font-family: "overpass";
+    src:url(../fonts/overpass/Overpass-SemiBold.ttf) format("truetype");
+    font-weight: 600;     
+}
+@font-face{
+    font-family: "overpass";
+    src:url(../fonts/overpass/Overpass-Bold.ttf) format("truetype");
+    font-weight: 800;     
+}

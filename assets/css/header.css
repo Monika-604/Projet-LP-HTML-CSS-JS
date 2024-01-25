@@ -1,0 +1,109 @@
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-overpass);
+}
+.header-content.mobile{
+    display: none;
+}
+.header-content .site-url, .header-content .our-news{
+    flex-basis: 25%;
+}
+.header-content .logo-content{
+    flex-basis: 50%;
+}
+.our-news div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+}
+.our-news .btn-news{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 0.75rem 1.4rem;
+    font-size: 1rem;
+    color: var(--white-color);
+    font-weight: 500;
+    transition: all .4s cubic-bezier(.7, 0, .2, 1);
+}
+.our-news .btn-news::before {
+    content: '';
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .4s cubic-bezier(.7, 0, .2, 1);
+}
+.our-news .btn-news:hover{
+    color: var(--dark-background-color);
+}
+.our-news .btn-news:hover::before {
+    transform: translate3d(0, -100%, 0);
+}
+.our-news .btn-news span, .site-url a span{
+    z-index: 100;
+    position: inherit;
+}
+.site-url a{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 0.75rem 1.4rem;
+    font-size: 1rem;
+    color: var(--dark-background-color);
+    font-weight: 600;
+    transition: all .4s cubic-bezier(.7, 0, .2, 1);
+}
+.site-url a::before{
+    content: '';
+    border-radius: 30px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .4s cubic-bezier(.7, 0, .2, 1);
+}
+.site-url a:hover::before {
+    transform: translate3d(0, -100%, 0);
+}
+.site-url a:hover{
+    color: var(--white-color);
+}
+.header-content .logo{
+    padding: 1.8rem 2rem;
+    margin: 0 auto;
+    background-color: var(--subsidiary-background-color);
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .header-content.desktop{
+        display: none;
+    }
+    .header-content .logo{
+        padding: 1.5rem 1.75rem;
+        margin: 0;
+        background-color: var(--subsidiary-background-color);
+        border-radius: 0px 0px 20px 20px;
+        width: 12rem;
+    }
+    .header-content.mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

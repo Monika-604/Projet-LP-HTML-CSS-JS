@@ -1,0 +1,378 @@
+@import './root.css';
+@import './reset.css';
+@import './font-face.css';
+@import './header.css';
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+.animate-on-scroll-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+.animate-on-scroll-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+.animate-on-scroll-down {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+body{
+    background: linear-gradient(180deg, var(--accent-color), var(--border-color));
+}
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 1300px; /* maximum width for larger screens */
+}
+  
+/* For smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 375px; /* maximum width for smaller screens */
+    }
+}
+.top-main{
+    position: relative;
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-main p{
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+    font-weight: 800;
+    font-family: var(--font-overpass);
+    color: var(--text-color);
+}
+.top-main h1{
+    font-size: 2.75rem;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-family: var(--font-oswald);
+    color: var(--dark-background-color);
+}
+.top-main h3{
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: var(--font-oswald);
+    color: var(--primary-color);
+}
+.top-main img, .top-main svg, .top-main span{
+    position: absolute;
+}
+.top-main #femme{
+    top: 2.5rem;
+    right: 7rem;
+}
+.top-main #homme{
+    top: 28rem;
+    left: 14rem;
+}
+.top-main #chien{
+    top: 3rem;
+    left: 1.5rem;
+}
+.top-main #chat{
+    top: 36rem;
+    right: 19rem;
+}
+.top-main #trait-1{
+    top: 24rem;
+    left: 66rem;
+    z-index: 1000;
+}
+.top-main #trait-2{
+    top: 6rem;
+    left: 24rem;
+    z-index: 1000;
+}
+.top-main span{
+    background-color: var(--white-color);
+}
+.top-main #circle-1{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    top: -1rem;
+    left: -10rem;
+}
+.top-main #circle-2{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    top: 8rem;
+    left: 35rem;
+}
+.top-main #circle-3{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    top: 27rem;
+    right: 5rem;
+}
+.top-main #circle-4{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 31rem;
+    left: 0rem;
+}
+.top-main #circle-5{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 35rem;
+    right: -11rem;
+}
+.bottom-main-container {
+    width: 100%;
+    margin: 4rem auto;
+    max-width: 1300px;
+}
+.bottom-main{
+    background-color: var(--subsidiary-background-color);
+    border-radius: 1.25rem;
+    padding: 2.5rem 3.25rem;
+}
+.bottom-main hr{
+    margin: 4rem 0;
+}
+.video-container h2{
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: var(--font-oswald);
+    font-weight: 500;
+    color: var(--dark-background-color);
+    margin-bottom: 3.25rem;
+}
+.hide {
+    display: none;
+}
+.video-container .video{
+    border-radius: 1.25rem;
+    position: relative;
+}
+.video-container .video #episode{
+    font-family: var(--font-overpass);
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    padding: .5rem .75rem;
+    border-radius: 30px;
+    position: absolute;
+    bottom: .5rem;
+    left: .75rem;
+}
+.video-container .video .play_video{
+    cursor: pointer;
+    background-color: var(--light-background-color);
+    padding: 1.75rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+}
+
+.video-container > div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5rem;
+}
+.video-container .content h4{
+    font-size: 1.75rem;
+    font-family: var(--font-oswald);
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 1.25rem;
+}
+.video-container .content p{
+    font-size: 1rem;
+    font-family: var(--font-overpass);
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1.25rem;
+}
+.video-container .content button{
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: var(--font-overpass);
+    font-weight: 700;
+    color: var(--dark-background-color);
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    padding: 0.75rem 1.4rem;
+    border-radius: 30px;
+}
+.video-container .content button::before{
+    content: '';
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .4s cubic-bezier(.7, 0, .2, 1);
+}
+.video-container .content button:hover::before {
+    transform: translate3d(0, -100%, 0);
+}
+.video-container .content button span{
+    z-index: 100;
+    position: inherit;
+}
+.clinic-container h2{
+    text-align: center;
+    font-size: 2.125rem;
+    font-family: var(--font-oswald);
+    font-weight: 500;
+    color: var(--dark-background-color);
+    margin-bottom: .25rem;
+}
+.clinic-container > p{
+    text-align: center;
+    font-size: 1.625rem;
+    font-family: var(--font-oswald);
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 3.25rem;
+}
+.clinic-container > div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6rem;
+}
+.clinic-container .item span{
+    margin: 0 auto;
+    background-color: var(--accent-color);
+    padding: 1.5rem 1rem;
+    display: inline-block;
+    border-radius: 0 0 10rem 10rem;
+    margin-bottom: 1rem;
+}
+.clinic-container .item span:hover{
+box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.05);
+background-image: linear-gradient(-145deg, #ffffff 0%, #ffffff 100%);
+}
+.clinic-container .item h5{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--font-oswald);
+    color: var(--dark-background-color);
+    margin-bottom: .5rem;
+}
+.clinic-container .item p{
+    text-align: center;
+    font-family: var(--font-overpass);
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    padding: 0px 17px;
+}
+.clinic-container .item div {
+    text-align: center;
+}
+.clinic-container .item div a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-family: var(--font-overpass);
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--secondary-color);
+}
+.clinic-container .item div a svg{
+    transition: all .4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.clinic-container .item div a:hover svg{
+    transform: translateX(.5rem);
+    
+}
+/* For smaller screens */
+@media (max-width: 768px) {
+    .top-main{
+        height: 32rem;
+    }
+    .top-main h3{
+        font-size: 1.25rem;
+    }
+    .top-main #homme, .top-main #chien, .top-main #trait-1, .top-main #trait-2, .top-main #circle-2, .top-main #circle-3{
+        display: none;
+    }
+    .top-main #femme{
+        top: -0.5rem;
+        left: 11rem;
+        width: 9rem;
+    }
+    .top-main #chat{
+        top: 27rem;
+        left: 1rem;
+    }
+    .top-main #circle-1{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        top: 0rem;
+        left: -7rem;
+    }
+    .top-main #circle-4{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        top: 29rem;
+        left: -9rem;
+    }
+    .top-main #circle-5{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        top: 23rem;
+        right: -8rem;
+    }
+    .bottom-main{
+        padding: 2.25rem 1.25rem;
+    }
+    .video-container h2, .clinic-container h2{
+        text-align: left;
+        font-size: 1.75rem;
+    }
+    .video-container > div{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+    }
+    .video-container .content h4{
+        font-size: 1.5rem;
+    }
+    .clinic-container > p{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .clinic-container > div{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 3rem;
+    }
+}
